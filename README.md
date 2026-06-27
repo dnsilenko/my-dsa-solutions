@@ -1,8 +1,7 @@
 ## What is this?
 ---
 
-These are my experiences solving problems in algorithms and data structures
-
+These are my experiences solving problems in Data Structures & Algorithms
 I decided to store here a set of tasks that I'm interested in sharing with others
 
 ---
