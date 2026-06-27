@@ -2,6 +2,7 @@
 ---
 
 These are my experiences solving problems in Data Structures & Algorithms
+
 I decided to store here a set of tasks that I'm interested in sharing with others
 
 ---
@@ -20,6 +21,6 @@ Solutions are organized by topic folder, then problem ID. Each submission is sto
 
 **Example:**
 ```
-Data Structures & Algorithms/two-integer-sum/submission-0.cs
-Data Structures & Algorithms/binary-search/submission-0.cs
+Data Structures & Algorithms/word-search-2/submission-0.cs
+Data Structures & Algorithms/word-search-2/submission-1.cs
 ```
