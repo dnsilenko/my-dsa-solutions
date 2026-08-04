@@ -1,0 +1,27 @@
+public class Solution
+{
+    public int LengthOfLIS(int[] nums)
+    {
+        var memo = new int[nums.Length]; // кешування результату із і-індекса
+        Array.Fill(memo, -1); // заповнення усіх значень: -1
+
+        int max = 1; // максимальна довжнина підмножини
+        for (int i = 0; i < nums.Length; i++) // починаємо із кожного значення
+            max = Math.Max(max, DFS(i, nums, memo));           
+
+        return max;
+    }
+        private int DFS(int i, int[] nums, int[] memo)
+        {
+            if (memo[i] != -1) return memo[i];
+
+            int max = 1;
+            for (int j = i + 1; j < nums.Length; j++)
+                if (nums[j] > nums[i])
+                {
+                    max = Math.Max(max, 1 + DFS(j, nums, memo));
+                }
+
+            memo[i] = max; return max;
+        }
+}
